@@ -1,0 +1,110 @@
+javascripts:
+
+prompt = pedir datos al usuario 
+continue = saltar un dato dentro de un while con un if
+break = detener en el momento 
+for (animal in animales) = esto muestra la posición | ejemplo: aqui mostraria "0" que es la posición
+for (animal of animales) = muestra lo que contiene la posición | ejemplo: aqui mostraria "perro"
+const saludar = nombre => document.write("hola,"+nombre) = funcion flecha
+metodo estatico = se pueden utilizar sin instanciar la clase
+startwith = este metodo sirve para saber si una cadena de texto empieza igual a otra si empiezan igual devuelve true sino false
+endswith = este metodo sirve para saber si una cadena de texto termina igual a otra, si es asi devolvera true, sino false
+includes = este metodo sirve sirve para saber si una cadena de texto tiene alguna de las palabras del otro, no importa si es al iniicio o al final 
+si la contiene devolvera true, en caso contrario devolvera false
+indexOf = este metodo sirve para saber en que posicion empieza el texto buscado, si devuelve -1 esta palabra no existe
+lastIndexOf = este metodo devuelve la posicion de la palabra buscada, pero es la ultima palabra en caso de que este varias veces
+repeat(metodo) = repetir una cadena la cantidad de veces que se desee 
+split(metodo) = convierte una cadena en un array, el cual se puede acceder a las palabras de las cadenas con la posicion 
+substring(metodo) = nos devuelve de la posicion de incio que indiquemos hasta poscion de termino que indiquemos
+ejepmplo: cadena = "hola comó estas"; document.write(cadena.substring(0,3)); esto nos devolveria 'hol' 
+toLowerCase(metodo) = convierte una cadena a minuscula
+toUpperCase(metodo) = convierte una cadena a MAYUSCULA
+trim() = quita los espacios que estan de sobra
+trimstart() = quita los espacios de sobra al principio
+trimend() = quita los espacios de sobra al final
+pop() = elimina el ulitmo elemento de un array
+shift() = elimina el primer elemento de un array
+push() = agrega uno o mas elementos al final de un array
+reverse() = invierte un array, osea el ultimo elemento pasa a ser el primero
+unshift() = agrega uno o mas elementos al inicio de un array
+sort() = ordena los elementos de un array de manera alfabetica en caso de que sean numeros de menor a mayor
+splice = elimina la cantidad de elementos que quieramos, indicando la posicion en la que se empieza
+en caso de  no querer eliminar se indica asi: splice(2'posicion',0'cant elementos a eliminar',"elemento agregado")
+join() = a partir de un array crea una cadena de texto, tambien se puede agregar un texto entre cada elemento
+numeros.join(" * ");
+slice() = muestra los elementos que indiquemos de un array, asi: slice(0'posicion inicio',4'posicion fin');
+document.getElementById(); = acceder a un elemento con id de html de javascripts
+document.getElementsByClassName(); = acceder a un elemento con clase de html de javascripts
+nota !!!mportante = el script de javascript en html debe ir al final!!!
+document.querySelector("aqui va el selector"); = selecciona el primer elementos html por su selector
+document.querySelectorAll() = selecciona todos los elementos html por su selector, puedes seleccinar uno en especifico asi: documnet.write(selector[0])
+setAttribute("type","text") = modifica uno atributo seleccionado con queryselector 
+getAttribute() = obtiene el atributo que le demos por parametros, previamente seleccionado!!! 
+removeAttribute("type"); = remueve un atributo seleccionado por el query 
+setAttribute("contentEditable",true); = da la posibilidad de re escribir el texto de la pag
+setAttribute("dir","rtl"); = pone el contenido de derecha a izquierda
+setAttribute("hidden",false); = oculta el elemento
+setAttribute("tabindex",0); = enfonca el elemento
+setAttribute("title","mensaje a mostrar"); = muestra el texto que pusimos al pasar el mouse por encima del texto principal
+document.write(cambio.value); = nos muestra el valor del input 
+document.write(cambio.type = "number"); = puede modificar el tipo de input a por ejemplo:variable.type = "text"
+cambio.accept = se usa para que acepte por ejemplo un tipo de imagen : "image/png"; 
+cambio.placeholder = "hola comó estas?"; = muestra el placeholder "hola comó estas?";
+cambio.style = podemos ir dandole estilos al elemento por ejemplo: cambio.style.color = "red"; esto cambio el color a rojo 
+cambio.classList.add("prueba"); = esto nos agrego la clase "prueba" al elemento seleccionado
+cambio.classList.remove("prueba"); = esto nos elimina la clase "prueba" del elemento seleccionado
+cambio.classList.contains("prueba")  = verifica si la clase existe en caso de que si, devuelve true y si no false
+cambio.classList.toggle("prueba"); = en caso  de que contenga la clase, la elimina y en caso que que no la contenga la agrega
+tambien podemos forzar a que no la elimine asi: cambio.classList.toggle("prueba",true); en caso contrario se pondria false
+cambio.classList.replace("prueba","prueba2.0"); = reemplaza la clase que le demos en el primer parametro, por la del segundo parametro
+cambio.innerHTML; = muestra el elemento html parcialmente
+cambio.outerHTML; = muestra el elemento html completo
+
+
+
+class humano 
+{
+    constructor (edad,altura,nombre,apellidos)
+    {
+        this.edad = edad;
+        this.altura = altura;
+        this.nombre =nombre;
+        this.apellidos = apellidos;
+        this.info = `mi nombre es:${nombre} ${apellidos} mido ${altura} y mi edad es ${edad}`
+    }
+    mostrar()
+    {
+        document.write(this.info);
+        
+    }
+    static saludar ()
+    {
+        alert("!hola!");
+    }
+
+    set setNombre (newName)
+    {
+       this.nombre = newName;
+    }
+    get getNombre ()
+    {
+        return this.nombre
+    }
+    set setApellidos (newLastName)
+    {
+       this.apellidos = newLastName;  
+    }
+    get getApellidos ()
+    {
+        return this.apellidos;
+    }
+    
+}
+
+
+let luis = new humano(23,1.78,"luis","lópez muñoz");
+
+luis.setNombre = "mercedes";
+luis.setApellidos = "ortega clavijo";
+
+document.write(luis.getNombre+" "+luis.getApellidos);
