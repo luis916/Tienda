@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Luis</title>
+        <link rel=StyleSheet href="main.css" type="text/css" media=screen>
+        <link rel="icon" href="youtube.ico">
+        <meta name="author" content="luis lopez">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+    </head>
+    <body>
+        <table> 
+            <tr>
+                <th>Codigo</th>
+                <th>producto</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Manzanas</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Peras</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Uvas</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Sandias</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Duraznos</td>
+            </tr>
+        </table>
+        <form>      
+            <p>Codigo<input type="text" maxlength="4" id="codigo"></p>
+            <p>Nombre<input type="text" maxlength="20" id="nombre"></p>
+            <p>Cantidad<input type="text" maxlength="3" id="cantidad"></p>
+            <p>Precio unitario<input type="text" maxlength="6" id="precioUnitario"></p>
+            <p>Valor total<input type="text" maxlength="7" id="valorTotal" readonly></p>
+            <input type="submit" value="Calcular" id="calcular"> 
+            <textarea placeholder="comentarios" maxlength="250"></textarea>
+            <input type="submit" value="Enviar"> 
+        </form>
+        <script src="index.js"></script>
+    </body>
+</html>
