@@ -48,19 +48,22 @@ p{font-size: 2vmax;margin: 1vh 0 0 0;}
 button{display: block;width: 100%;}
 
 .dropdown{
-    margin-left: 10vh;
-    margin-right: 10vh;
+
     border: 1px solid;
-    width: 211px;
+    width: 51vh;
     border-radius: 5px;
     box-shadow:0 0 5px 1px;
     position:relative;
     top: -1vh;
+    margin-left: 2.5vh;
+    margin-right: 2.5vh;
 }
 .dropdown-btn{
     padding: 1vh;
     background-color: rgb(36, 36, 116);
     border: none;position:relative;
+    
+    
 }
 .dropdown-content button{
     border: none;
@@ -68,8 +71,5 @@ button{display: block;width: 100%;}
     font-size: 2vh;
     background-color: white;
     box-sizing: border-box;
+    text-align: left;
 }
-
-
-
-
