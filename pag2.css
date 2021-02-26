@@ -45,16 +45,29 @@ p{font-size: 2vmax;margin: 1vh 0 0 0;}
     border: 1px solid;
     border-radius: 5px;
 }
-button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+button{display: block;width: 100%;}
+
+.dropdown{
+    margin-left: 10vh;
+    margin-right: 10vh;
+    border: 1px solid;
+    width: 211px;
+    border-radius: 5px;
+    box-shadow:0 0 5px 1px;
+    position:relative;
+    top: -1vh;
 }
-.dropdown-content{
-    display: none;
+.dropdown-btn{
+    padding: 1vh;
+    background-color: rgb(36, 36, 116);
+    border: none;position:relative;
 }
-.dropdown:hover .dropdown-content{
-    display: block;
+.dropdown-content button{
+    border: none;
+    padding: 0.5vh;
+    font-size: 2vh;
+    background-color: white;
+    box-sizing: border-box;
 }
 
 
